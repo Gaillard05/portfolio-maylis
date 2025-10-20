@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maylis Gaillard - Developpeuse web junior</title>
+    <link rel="stylesheet" href="../assets/css/portfolio.css" type="text/css"/>
+    <link href="../assets/fonts/Nunito/Nunito-Regular.ttf"/>
+    <link href="../assets/fonts/Inter/Inter_18pt-Regular.ttf"/>
+    <link rel="shortcut icon" href="../assets/img/logo/logo_portfolio_large.png" type="image/x-png">
+</head>
+<body>
+    <header>
+        <div class="conteneur-navbar">
+            <div class="conteneur-logo">
+                <img src="./assets/img/logo/logo_portfolio.png" alt="img_fond" class="logo">
+            </div>
+            <div class="menu-icon">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <div class="menu-hidden">
+            <nav class="menu">
+                <a href="#">Accueil</a>
+                <a href="#">A propos de moi</a>
+                <a href="#">Projets</a>
+                <a href="#">Contact</a>
+            </nav>
+        </div>
+    </header>
