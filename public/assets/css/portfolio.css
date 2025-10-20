@@ -4,10 +4,25 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #202020;
+}
+
+@font-face {
+    font-family: "Nunito";
+    src: url("../fonts/Nunito/Nunito-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/Inter/Inter_18pt-Regular.ttf");
+}
+
 /* header - version mobile */
 header {
     position: fixed;
     width: 100%;
+    z-index: 1000;
 }
 
 .conteneur-navbar {
@@ -41,10 +56,6 @@ header {
     display: block;
 }
 
-.menu-icon {
-    margin: 1%;
-}
-
 .menu-icon .fa-solid  {
     font-size: large;
     color: #fefefe;
@@ -63,11 +74,40 @@ header {
 
 .menu a {
     text-decoration: none;
-    font-family: 'Inter_18pt-Regular';
+    font-family: 'Inter';
     color: #fefefe;
+    font-size: 1rem;
     margin: 1%;
 }
 
 .menu a:hover {
    opacity: 0.6;
+}
+
+/* section accueil - version mobile */
+
+.accueil {
+    color: #fefefe;
+    background-image: 
+    url("../img/fond/image_fond_version_mobile.png");
+    position: relative;
+    background-size: 100px 100px;
+    background-position: 0 0, 0, 50px, 50px -50px 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+}
+
+.contenu-accueil {
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    color: #fefefe;
+}
+
+h1 {
+    font-family: "Nunito";
+    font-size: 2rem;
 }

@@ -1,5 +1,5 @@
 <?php
 
-require_once "../app/view/home/home.php"
+require_once "../app/view/home/home.phtml"
 
 ?>
