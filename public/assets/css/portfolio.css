@@ -30,9 +30,12 @@ body {
 
 /* style général du portfolio */
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     font-family: "Nunito";
     color: #fefefe;
+}
+
+h1, h2 {
     text-align: center;
 }
 
@@ -40,16 +43,23 @@ h2 {
     font-size: 1.5rem;
 }
 
-p, span {
+p, strong {
    font-family: "Inter";
    font-size: 12px;
 }
 
-span {
-    font-family: "Inter-Bold";
+.fa-linkedin, .fa-github, .fa-php, .fa-js, .fa-python {
+    margin: 0 auto;
+    color: #b5b0ac;
+    font-size: xx-large;
+}
+
+.titre-icone-php, .titre-icone-js, .titre-icone-python {
+    text-align: center;
 }
 
 /* header - version mobile */
+
 header {
     position: fixed;
     width: 100%;
@@ -155,8 +165,6 @@ header {
 
 .fa-linkedin, .fa-github {
     margin: 2%;
-    color: #b5b0ac;
-    font-size: xx-large;
 }
 
 .contact {
@@ -200,7 +208,8 @@ header {
 .a-propos {
     background-color: #202020;
     width: 100%;
-    padding: 1rem 0 0;
+    padding: 2rem 0 0;
+    margin-bottom: 5%;
     color:#fefefe;
 }
 
@@ -213,7 +222,7 @@ header {
     margin-bottom: 5%;
 }
 
-h3, p {
+.titre-poste, .para-a-propos, .devise {
     text-align: left;
     margin: 5%;
 }
@@ -241,4 +250,38 @@ h3, p {
 .devise {
     font-family: "Inter-Italic";
     font-size: 12px;
+}
+
+/* contenu technologies - version mobile */
+.technologies {
+    background-color: #202020;
+    width: 100%;
+    padding: 2rem 0 0;
+    margin-bottom: 5%;
+    color:#fefefe;
+}
+
+/* .contenu-technologies {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+} */
+
+.titre-technologies, .titre-programmation, .titre-developpement, .titre-bdd, .titre-librairies  {
+    text-align: center;
+    margin: 5%;
+}
+
+.contenu-icone-program {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 5%;
+}
+
+.contenu-icone-php, .contenu-icone-js, .contenu-icone-python {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
