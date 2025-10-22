@@ -18,6 +18,37 @@ body {
     src: url("../fonts/Inter/Inter_18pt-Regular.ttf");
 }
 
+@font-face {
+    font-family: "Inter-Italic";
+    src: url("../fonts/Inter/Inter_18pt-Italic.ttf");
+}
+
+@font-face {
+    font-family: "Inter-Bold";
+    src: url("../fonts/Inter/Inter_18pt-Bold.ttf");
+}
+
+/* style général du portfolio */
+
+h1, h2, h3 {
+    font-family: "Nunito";
+    color: #fefefe;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+p, span {
+   font-family: "Inter";
+   font-size: 12px;
+}
+
+span {
+    font-family: "Inter-Bold";
+}
+
 /* header - version mobile */
 header {
     position: fixed;
@@ -94,7 +125,7 @@ header {
     background-image: 
     url("../img/fond/image_fond_version_mobile.png");
     position: relative;
-    top: 50px;
+    top: 2rem;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -103,20 +134,23 @@ header {
 }
 
 .contenu-accueil {
-    padding: 10rem 0 10rem 0;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15rem 0 15rem 0;
     text-align: center;
 }
 
-.identite, h2{
-    font-family: "Nunito";
+.identite {
     font-size: 2.5rem;
-    color: #fefefe;
 }
 
 .profession {
-    margin: 4%;
-    font-size: 1.5rem;
+    margin-top: 5%;
+}
+
+.reseaux-sociaux {
+    margin-top: 5%;
 }
 
 .fa-linkedin, .fa-github {
@@ -127,13 +161,15 @@ header {
 
 .contact {
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    margin: 4%;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 .btn-contact {
-    width: 200px;
-    padding: 20px;
+    width: 180px;
+    padding: 15px;
     border-radius: 4px;
     background-color: #b5b0ac;
     text-decoration: none;
@@ -148,7 +184,15 @@ header {
 }
 
 .scroll-bas {
-    margin-top: 5%;
+    position: relative;
+}
+
+.btn-scroll-bas {
+    position: absolute;
+    background-position: center;
+    top: 18vh;
+    left: 20vh;
+    right: 20vh;
 }
 
 /* contenu a propos de moi - version mobile */
@@ -156,10 +200,45 @@ header {
 .a-propos {
     background-color: #202020;
     width: 100%;
-    padding: 8rem;
+    padding: 1rem 0 0;
+    color:#fefefe;
 }
 
-.contenu-a-propos>h2 {
+.contenu-a-propos-img {
     text-align: center;
-    color: #fefefe;
+}
+
+.titre-a-propos {
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+h3, p {
+    text-align: left;
+    margin: 5%;
+}
+
+.contenu-photo {
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+}
+
+.photo-maylis{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    outline: none;
+    border-radius: 50%;
+}
+
+.contenu-a-propos {
+    width: 100%;
+}
+
+.devise {
+    font-family: "Inter-Italic";
+    font-size: 12px;
 }
