@@ -48,13 +48,41 @@ p, strong {
    font-size: 12px;
 }
 
-.fa-linkedin, .fa-github, .fa-php, .fa-js, .fa-python {
+.fa-linkedin, 
+.fa-github, 
+.fa-php, 
+.fa-js, 
+.fa-python, 
+.fa-html5, 
+.fa-css3-alt, 
+.fa-symfony,
+.icone_codeIgniter, 
+.fa-react,
+.icone_mysql,
+.icone_jquery,
+.fa-bootstrap,
+.fa-wordpress
+{
     margin: 0 auto;
     color: #b5b0ac;
     font-size: xx-large;
 }
 
-.titre-icone-php, .titre-icone-js, .titre-icone-python {
+.icone_codeIgniter, .icone_mysql, .icone_jquery {
+    width: 30px;
+}
+
+.titre-icone-php, 
+.titre-icone-js, 
+.titre-icone-python, 
+.titre-icone-hml5, 
+.titre-icone-css3, 
+.titre-icone-symfony,
+.titre-icone-codeIgniter,
+.titre-icone-react,
+.titre-icone-mysql
+{
+    margin: 5%;
     text-align: center;
 }
 
@@ -267,19 +295,42 @@ header {
     justify-content: space-between;
 } */
 
-.titre-technologies, .titre-programmation, .titre-developpement, .titre-bdd, .titre-librairies  {
+.titre-technologies, 
+.titre-programmation, 
+.titre-developpement, 
+.titre-bdd, 
+.titre-librairies,
+.titre-cms 
+{
     text-align: center;
     margin: 5%;
 }
 
-.contenu-icone-program {
+.contenu-icone-program, 
+.contenu-icone-dev, 
+.contenu-icone-bdd,
+.contenu-icone-libs,
+.contenu-icone-cms
+{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     margin: 5%;
 }
 
-.contenu-icone-php, .contenu-icone-js, .contenu-icone-python {
+.contenu-icone-php, 
+.contenu-icone-js, 
+.contenu-icone-python, 
+.contenu-icone-html5, 
+.contenu-icone-css3, 
+.contenu-icone-symfony, 
+.contenu-icone-codeIgniter,
+.contenu-icone-react, 
+.contenu-icone-mysql,
+.contenu-icone-bootstrap,
+.contenu-icone-jquery,
+.contenu-icone-wordpress
+{
     display: flex;
     flex-direction: column;
     justify-content: center;
