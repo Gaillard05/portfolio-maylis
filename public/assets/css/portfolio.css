@@ -35,7 +35,7 @@ h1, h2, h3, h4 {
     color: #fefefe;
 }
 
-h1, h2 {
+h1, h2, h4 {
     text-align: center;
 }
 
@@ -85,6 +85,37 @@ p, strong {
     margin: 5%;
     text-align: center;
 }
+
+.a-propos, .projets {
+    padding: 4rem 0 0;
+}
+
+.a-propos, .technologies, .projets, .contact {
+    width: 100%;
+    background-color: #202020;
+    color:#fefefe;
+    margin-bottom: 5%;
+}
+
+.titre-a-propos, .titre-projet {
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+.btn-contact, .btn-savoir-plus, .btn-envoyer {
+    padding: 15px;
+    border-radius: 4px;
+    background-color: #b5b0ac;
+    text-decoration: none;
+    font-size: 12px;
+    color:#fefefe;
+    font-family: "Inter";
+} 
+
+.btn-contact, .btn-envoyer {
+    width: 200px;
+}
+
 
 /* header - version mobile */
 
@@ -142,15 +173,18 @@ header {
 }
 
 .menu a {
-    text-decoration: none;
-    font-family: 'Inter';
-    color: #fefefe;
     font-size: 1rem;
     margin: 1%;
 }
 
 .menu a:hover {
    opacity: 0.6;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Inter';
+    color: #fefefe;
 }
 
 /* section accueil - version mobile */
@@ -195,23 +229,12 @@ header {
     margin: 2%;
 }
 
-.contact {
+.contenu-btn-contact {
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin-top: 5%;
     margin-bottom: 5%;
-}
-
-.btn-contact {
-    width: 180px;
-    padding: 15px;
-    border-radius: 4px;
-    background-color: #b5b0ac;
-    text-decoration: none;
-    font-size: 14px;
-    color:#fefefe;
-    font-family: "Inter";
 }
 
 .fa-envelope {
@@ -233,21 +256,8 @@ header {
 
 /* contenu a propos de moi - version mobile */
 
-.a-propos {
-    background-color: #202020;
-    width: 100%;
-    padding: 2rem 0 0;
-    margin-bottom: 5%;
-    color:#fefefe;
-}
-
 .contenu-a-propos-img {
     text-align: center;
-}
-
-.titre-a-propos {
-    margin-top: 10%;
-    margin-bottom: 5%;
 }
 
 .titre-poste, .para-a-propos, .devise {
@@ -281,19 +291,10 @@ header {
 }
 
 /* contenu technologies - version mobile */
-.technologies {
-    background-color: #202020;
-    width: 100%;
-    padding: 2rem 0 0;
-    margin-bottom: 5%;
-    color:#fefefe;
-}
 
-/* .contenu-technologies {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-} */
+.technologies {
+    padding: 2rem 0 0;
+}
 
 .titre-technologies, 
 .titre-programmation, 
@@ -335,4 +336,117 @@ header {
     flex-direction: column;
     justify-content: center;
     text-align: center;
+}
+
+/* contenu projets - version mobile */
+
+.contenu-projets {
+    width: 100%;
+}
+
+.card-gusto-coffee, .card-effreiFlix, .card-streamlit-LLM {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    border: solid 2px #b5b0ac;
+    width: 250px;
+    margin: 0 auto;
+    margin-bottom: 5%;
+}
+
+.photo-gusto-coffee, .photo-effreiFlix, .photo-streamlit-LLM{
+    width: 100%;
+}
+
+.titre-projet {
+    margin: 5%;
+}
+
+.para-gusto-coffee, .para-effreiFlix, .para-streamlit-LLM {
+    margin: 5%;
+}
+
+.btn-savoir-plus {
+    margin: 5%;
+}
+
+.fa-circle-plus {
+    font-size: 14px;
+}
+
+/* contenu contact - version mobile */
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+.contenu-contact-form {
+    width: 100%;
+}
+
+.description, .info {
+    text-align: center;
+    font-size: 14px;
+    margin: 4%;
+}
+
+.info {
+    font-size: 12px;
+}
+
+.form, .contenu-moyen-contact {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    border: solid 2px #b5b0ac;
+}
+
+.contenu-form {
+    margin: 0 auto;
+}
+
+.label {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+.champs-contact {
+    width: 100%;
+    margin: 0 auto;
+}
+
+input, .txt-message {
+    border-radius: 4px;
+    border: none;
+    padding: 2%;
+    width: 200px;
+}
+
+.contenu-btn-form {
+    display: flex;
+    justify-content: center;
+}
+
+label, input, .txt-message, .btn-envoyer, .lien-mail, .btn-cv {
+    font-family: "Inter";
+    font-size: 12px;
+}
+
+label, input, .txt-message, .btn-envoyer {
+    margin: 3%;
+}
+
+.btn-envoyer {
+    border: none;
+}
+
+.contenu-moyen-contact {
+    margin-top: 5%;
 }

@@ -12,7 +12,7 @@ include_once "../app/view/header/header.phtml";
                     <a href="#"><i class="fa-brands fa-linkedin"></i></a>
                     <a href="#"><i class="fa-brands fa-github"></i></a>
                 </div>
-                <div class="contact">
+                <div class="contenu-btn-contact">
                     <a href="#" class="btn-contact"><i class="fa-regular fa-envelope"></i> Me contacter </a>
                 </div>
                 <div class="scroll-bas">
@@ -124,6 +124,73 @@ include_once "../app/view/header/header.phtml";
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+    <section class="projets" id="projets">
+        <h2 class="titre-projet">Projets</h2>
+        <div class="contenu-projets">
+            <div class="card-gusto-coffee">
+                <img src="https://placehold.co/600x400" alt="projet gusto-coffee" class="photo-gusto-coffee">
+                <h4 class="titre-projet">Gusto Coffee</h4>
+                <p class="para-gusto-coffee">Application web réalisée dans le cadre de ma soutenance à Digital School of Paris, permettant de réserver facilement des espaces de travail collaboratif dans un coffe shop.</p>
+                <a href="#" class="btn-savoir-plus">En savoir <i class="fa-solid fa-circle-plus"></i></a>
+            </div>
+            <div class="card-effreiFlix">
+                <img src="https://placehold.co/600x400" alt="projet effreiFlix" class="photo-effreiFlix">
+                <h4 class="titre-projet">EFREIFLIX</h4>
+                <p class="para-effreiFlix">Application type Netflix réalisée pour un cours sur les micro-frontends à L’EFREI, démontrant la composition modulaire d’interfaces web et la communicatin entre composants indépendants</p>
+                <a href="#" class="btn-savoir-plus">En savoir <i class="fa-solid fa-circle-plus"></i></i></a>
+            </div>
+            <div class="card-streamlit-LLM">
+                <img src="https://placehold.co/600x400" alt="projet streamlit-LLM" class="photo-streamlit-LLM">
+                <h4 class="titre-projet">Streamlit-LLM (Artificial Education)</h4>
+                <p class="para-streamlit-LLM">Mini-application réalisée pendant un cours de machine learning à L’EFREI, conçue pour aider à la révision des cours via une inteface type ChatGPT.</p>
+                <a href="#" class="btn-savoir-plus">En savoir <i class="fa-solid fa-circle-plus"></i></a>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <h2 class="titre-contact">Contact</h2>
+        <p class="description">Projets ou missions freelance ? Parlons en !</p>
+        <div class="contenu-contact-form">
+            <p class="info">Remplissez le formulaire pour me contacter</p>
+            <form action="#" method="post" class="form">
+                <div class="contenu-form">
+                    <div class="label">
+                        <label for="nom">Nom</label>
+                    </div>
+                    <div class="champs-contact">
+                        <input type="text" name="nom" placeholder="Votre nom">
+                    </div>
+                    <div class="label">
+                        <label for="mail">E-mail</label>
+                    </div>
+                    <div class="champs-contact">
+                        <input type="text" name="mail" placeholder="Votre e-mail">
+                    </div>
+                    <div class="label">
+                        <label for="message">Message</label>
+                    </div>
+                    <div class="champs-contact">
+                        <textarea name="message" rows="5" cols="33" class="txt-message"></textarea>
+                    </div>
+                    <div class="contenu-btn-form">
+                        <button type="submit" class="btn-envoyer"><i class="fa-solid fa-paper-plane"></i> Envoyer</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="contenu-moyen-contact">
+            <p class="info-moyen-contact">Vous pouvez me contacter directement</p>
+            <div class="contact-mail">
+                <a href="mailto" class="lien-mail"><i class="fa-regular fa-envelope"></i> maylisgaillard@hotmail.fr</a>
+            </div>
+        </div>
+        <div class="contenu-cv">
+            <p class="intitule-cv">Cv</p>
+            <div class="contact-mail">
+                <a href="#" class="btn-cv"><i class="fa-solid fa-cloud-arrow-down"></i> Télécharger mon CV</a>
             </div>
         </div>
     </section>
