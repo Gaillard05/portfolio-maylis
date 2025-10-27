@@ -473,7 +473,23 @@ label, input, .txt-message, .btn-envoyer {
     margin: 5%;
 }
 
+/* boutton de scroll pour aller en haut du portfolio */
+
+.conteneur-scroll-haut {
+    position: fixed;
+    bottom: 10%;
+    right: 0;
+}
+
+.scroll-haut-hidden {
+    visibility: hidden;
+}
+
 /* footer - version mobile */
+
+footer {
+    margin-top: 20%;
+}
 
 .copyright {
     margin: 0 auto;
@@ -483,13 +499,18 @@ label, input, .txt-message, .btn-envoyer {
 .conteneur-reseaux-sociaux {
     display: flex;
     flex-direction: column;
+    margin: 2%;
 }
 
 .titre-contenu-reseaux {
-    margin: 5%;
+    margin-bottom: 5%;
 }
 
 .footer-reseaux-sociaux {
     display: flex;
     flex-direction: row;
+}
+
+.icone-linkedin, .icone_github {
+    font-size: medium;
 }
