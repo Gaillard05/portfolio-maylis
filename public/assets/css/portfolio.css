@@ -475,14 +475,23 @@ label, input, .txt-message, .btn-envoyer {
 
 /* boutton de scroll pour aller en haut du portfolio */
 
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
 .conteneur-scroll-haut {
     position: fixed;
     bottom: 10%;
     right: 0;
 }
 
-.scroll-haut-hidden {
-    visibility: hidden;
+.invisible {
+    opacity: 0;
+}
+
+.visible {
+    animation:  fadeIn 1s ease-in-out;
 }
 
 /* footer - version mobile */
