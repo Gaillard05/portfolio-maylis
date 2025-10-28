@@ -248,12 +248,65 @@ a {
     position: relative;
 }
 
+@keyframes neonPulse {
+    0% {
+        filter: drop-shadow(0 0 2px #bfa751)
+                drop-shadow(0 0 4px #bfa751)
+                drop-shadow(0 0 8px #bfa751);
+    }
+
+    50% {
+        filter: drop-shadow(0 0 8px #bfa751)
+                drop-shadow(0 0 16px #bfa751)
+                drop-shadow(0 0 24px #bfa751);
+    }
+
+    100% {
+        filter: drop-shadow(0 0 3px #bfa751)
+                drop-shadow(0 0 6px #bfa751)
+                drop-shadow(0 0 12px #bfa751);
+    }
+}
+
+/* @keyframes dessiner {
+   0% { 
+        stroke-dashoffset: 565; 
+        stroke: #bfa751; 
+    }
+   50% { 
+        stroke-dashoffset: 0; 
+        stroke: #bfa751; 
+    }
+   100% { 
+        stroke-dashoffset: 565; 
+        stroke: #b5b0ac;
+    }
+} */
+
 .btn-scroll-bas {
     position: absolute;
     background-position: center;
     top: 12vh;
     left: 20vh;
     right: 20vh;
+    animation: neonPulse 2s linear infinite;
+}
+
+ellipse, line, polyline {
+    fill: none;
+    stroke-width: 2;
+}
+
+ellipse {
+   stroke: #b5b0ac;
+   /* stroke-dasharray: 565;
+   stroke-dashoffset: 565; */
+}
+
+line, polyline {
+    stroke: #fefefe;
+    stroke-linecap: round;
+    stroke-linejoin: round;
 }
 
 /* contenu a propos de moi - version mobile */
