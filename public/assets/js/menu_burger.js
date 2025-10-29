@@ -4,7 +4,7 @@ const nav = document.querySelector('.menu-hidden');
 menu.addEventListener('click', () => {
     if(nav.classList.contains('menu-hidden')) {
         nav.classList.remove('menu-hidden');
-        nav.classList.add('manu-active');
+        nav.classList.add('menu-active');
         menu.classList.remove('fa-bars');
         menu.classList.add('fa-xmark');
     } else {
