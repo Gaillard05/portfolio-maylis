@@ -48,7 +48,7 @@ p, strong {
    font-size: 12px;
 }
 
-.fa-linkedin, 
+.fa-linkedin,
 .fa-github, 
 .fa-php, 
 .fa-js, 
@@ -75,7 +75,7 @@ p, strong {
 .titre-icone-php, 
 .titre-icone-js, 
 .titre-icone-python, 
-.titre-icone-hml5, 
+.titre-icone-html5,
 .titre-icone-css3, 
 .titre-icone-symfony,
 .titre-icone-codeIgniter,
@@ -126,12 +126,13 @@ header, .menu, footer {
     background-color: #a3cbd7;
     text-decoration: none;
     font-size: 12px;
+    text-align: center;
     color: #0a1113;
     font-family: "Inter";
 } 
 
 .btn-contact, .btn-envoyer {
-    width: 200px;
+    width: 150px;
 }
 
 
@@ -150,12 +151,20 @@ header {
     width: 50px;
 }
 
-.menu-icon {
+.menu-icone {
+    display: block;
+}
+
+.menu-desktop {
+    display: none;
+}
+
+.menu-icone {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 1%;
+    margin-right: 1%;
 }
 
 .menu-hidden {
@@ -225,7 +234,7 @@ a {
 }
 
 .reseaux-sociaux {
-    margin-top: 5%;
+    margin-top: 2%;
 }
 
 .fa-linkedin, .fa-github {
@@ -237,7 +246,6 @@ a {
     flex-direction: row;
     justify-content: center;
     margin-top: 5%;
-    margin-bottom: 5%;
 }
 
 .fa-envelope {
@@ -263,9 +271,14 @@ a {
 .btn-scroll-bas {
     position: absolute;
     background-position: center;
-    top: 12vh;
+    top: 0;
     left: 20vh;
     right: 20vh;
+}
+
+svg.img-btn-scroll-bas{
+   height: 55px;
+   width: 55px;
 }
 
 .ellipse, line, polyline {
@@ -413,7 +426,7 @@ line, polyline {
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
-    padding: 1.5rem;
+    padding: 5rem 0 0;
 }
 
 .contenu-contact-form {
@@ -433,29 +446,26 @@ line, polyline {
 .form {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    border-radius: 5px;
+    justify-content: center;
+    margin: 0 auto;
+    width: 250px;
 }
 
-.contenu-form, .contenu-mailto, .contenu-cv {
+.form, .contenu-mailto, .contenu-cv {
     margin: 0 auto;
     border-radius: 5px;
     border: solid 2px #ecf3f5;
 }
 
 .contenu-form {
-    padding: 1.4rem;
-}
-
-.label {
-    display: flex;
-    flex-direction: column;
-    align-items: baseline;
-}
-
-.champs-contact {
-    width: 100%;
     margin: 0 auto;
+    padding: 1.8rem;
+}
+
+.contenu-btn-form {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
 }
 
 input, .txt-message {
@@ -463,11 +473,6 @@ input, .txt-message {
     border: none;
     padding: 2%;
     width: 190px;
-}
-
-.contenu-btn-form {
-    display: flex;
-    justify-content: center;
 }
 
 label, input, .txt-message, .btn-envoyer, .lien-mail, .btn-cv {
@@ -480,6 +485,7 @@ label, input, .txt-message, .btn-envoyer {
 }
 
 .btn-envoyer {
+    width: 190px;
     border: none;
 }
 
@@ -495,7 +501,14 @@ label, input, .txt-message, .btn-envoyer {
    padding: 2.4rem;
 }
 
+.lien-mail:hover {
+    color: #a3cbd7;
+}
+
 .contenu-btn-cv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     padding: 2.6rem;
 }
 
@@ -514,6 +527,7 @@ label, input, .txt-message, .btn-envoyer {
     position: fixed;
     bottom: 10%;
     right: 0;
+    animation: flecheSubtile 1.8s ease-in-out infinite;
 }
 
 .invisible {
@@ -522,6 +536,11 @@ label, input, .txt-message, .btn-envoyer {
 
 .visible {
     animation:  fadeIn 1s ease-in-out;
+}
+
+.bouton-scroll {
+    width:35px; 
+    height:45px;
 }
 
 /* footer - version mobile */
@@ -551,5 +570,382 @@ footer {
 }
 
 .icone-linkedin, .icone_github {
-    font-size: medium;
+    font-size: 22px;
+}
+
+
+/* portfolio - version mobile large */
+@media (max-width: 425px) {
+     /* section accueil */
+
+    /* .fond-accueil {
+        height: 900px;
+    } */
+
+    .profession {
+        margin-top: 10%;
+    }
+
+    .fa-linkedin, .fa-github {
+        margin-top: 10%;
+    }
+
+    .btn-contact {
+       margin-top: 3%;
+       margin-bottom: 4%;
+    }
+
+
+    .btn-scroll-bas {
+        top: 1vh;
+    }
+
+    .img-btn-scroll-bas {
+        width: 40%;
+        height: 40%;
+    }
+}
+
+
+/* portfolio - version tablette */
+
+@media (min-width: 768px) {
+
+    /* style general */
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    h4 {
+        font-size: 1.5rem;
+    }
+
+    .logo {
+        width: 50%;
+    }
+
+    .card-gusto-coffee, .card-effreiFlix, .card-streamlit-LLM, .form, .contenu-mailto,  .contenu-cv{
+        width: 400px;
+    }
+
+    label, input, .btn-envoyer, .btn-cv {
+        font-size: 1rem;
+    }
+
+
+    /* header */
+
+    .menu-icon {
+        font-size: 100%;
+    }
+
+    .fa-bars, .fa-xmark {
+        font-size: 1.5rem;
+    }
+
+    .menu>a{
+        font-size: 1.3rem;
+    }
+
+
+    /* section accueil */
+
+    .fond-accueil {
+        height: 950px;
+        width: 100%;
+    }
+
+    .contenu-accueil {
+        padding: 12rem 0 12rem 0;
+    }
+
+    .identite {
+        font-size: 3rem;
+    }
+
+    .profession {
+        font-size: 2.5rem;
+        margin-top: 10%;
+    }
+
+   .fa-linkedin, .fa-github {
+        font-size: 50px;
+        margin-top: 5%;
+    }
+
+    .btn-contact {
+        width: 220px;
+        padding: 1rem;
+        font-size: 20px;
+    }
+
+    .fa-envelope {
+        font-size: 25px;
+    }
+
+
+    .btn-scroll-bas {
+        top: 10vh;
+    }
+
+    svg.img-btn-scroll-bas {
+        width: 80px;
+        height: 80px;
+    }
+
+    /* section a propos de moi */
+
+    .devise, p, strong {
+        font-size: 1.2rem;
+    }
+
+    .contenu-photo {
+        height: 200px;
+        width: 200px;
+    }
+
+    /* contenu technologies */
+
+    .fa-php, 
+    .fa-js, 
+    .fa-python, 
+    .fa-html5, 
+    .fa-css3-alt, 
+    .fa-symfony,
+    .fa-react,
+    .icone_mysql,
+    .icone_jquery,
+    .fa-bootstrap,
+    .fa-wordpress
+    {
+        font-size: 60px;
+        margin-bottom: 10%;
+    }
+
+    .icone_codeIgniter, 
+    .icone_mysql,
+    .icone_jquery
+    {
+        width: 60px;
+    }
+
+    /* Projets */
+
+    .card-gusto-coffee, .card-effreiFlix, .card-streamlit-LLM {
+        width: 400px;
+    }
+
+    .btn-savoir-plus {
+        width: 150px;
+        font-size: 1rem;
+    }
+
+    /* Contact */
+
+    .contact {
+        padding: 8rem 0 0;
+    }
+
+    .description, .info {
+        font-size: 1.4rem;
+    }
+
+    .contenu-form {
+        margin: 0 auto;
+        padding: 1.8rem;
+    }
+
+    .label, .input, .txt-message {
+        margin-bottom: 5%;
+    }
+
+    .input, .txt-message {
+        width: 300px;
+    }
+
+    .info-moyen-contact {
+        text-align: center;
+    }
+
+    .mail {
+        text-align: center;
+    }
+
+    .lien-mail {
+        font-size: 1.2rem;
+    }
+
+    .btn-cv {
+        width: 220px;
+    }
+
+    /* boutton de scroll vers le haut */
+    .bouton-scroll {
+        width: 50px;
+        height: 50px;
+    }
+
+     .conteneur-scroll-haut {
+        bottom: 15%;
+        margin-right: 6%;
+    }
+
+    /* footer */
+    .titre-reseaux
+    {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .icone-linkedin, .icone_github {
+        font-size: 2rem;
+    }
+
+    /* copyright */
+
+    .copyright {
+        font-size: 1rem;
+    }
+
+
+}
+
+
+/* portfolio - version ordinateur */
+
+@media (min-width: 1024px) {
+
+    /* style general */
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    h3 {
+        font-size: 2.5rem;
+    }
+
+    h4 {
+        font-size: 2rem;
+    }
+
+    .logo {
+        width: 35%;
+    }
+
+    .card-gusto-coffee, .card-effreiFlix, .card-streamlit-LLM, .form, .contenu-mailto,  .contenu-cv{
+        width: 400px;
+    }
+
+    label, input, .btn-envoyer, .btn-cv {
+        font-size: 1rem;
+    }
+
+
+    /* header */
+
+    .menu-icone .fa-bars {
+        display: none;
+    }
+
+    .conteneur-navbar {
+        border: none;
+    }
+
+    .menu-desktop {
+        display: block;
+        width: 35%;
+    }
+
+    .menu-principal>a {
+        margin: 1%;
+    }
+
+    /* section accueil */
+
+    .fond-accueil {
+        height: 100%;
+        width: 100%;
+        background-image: url("../img/fond/image_fond_couleur.png");
+        top: 0;
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding: 1%;
+    }
+
+    .contenu-accueil {
+        padding: 10rem 0 10rem 0;
+    }
+
+    .identite {
+        font-size: 3rem;
+        margin-top: 3%;
+    }
+
+    .profession {
+        font-size: 2rem;
+        margin-top: 3%;
+    }
+    
+
+    .icone-accueil-linkedin, .icone-accueil-github {
+        font-size: 50px;
+        margin-top: 1%;
+    }
+
+
+    .contenu-btn-contact {
+        margin-top: 1%;
+        margin-bottom: 5%;
+    }
+
+    .btn-contact {
+        width: 200px;
+        padding: 1rem;
+        margin-top: 1%;
+        font-size: 14px;
+    }
+
+    .fa-envelope {
+        font-size: 15px;
+    }
+
+
+    .btn-scroll-bas {
+        top: 0;
+    }
+
+    .img-btn-scroll-bas {
+        width: 5%;
+        height: 5%;
+    }
+
+/*  btn de scroll vers le haut */
+
+    .conteneur-scroll-haut {
+        bottom: 25%;
+        margin-right: 5%;
+    }
+
+    .bouton-scroll {
+        width: 70%;
+    }
+
+/* icones footer */
+
+    .icone-linkedin, .icone-github {
+        width: 30px;
+    }
+
+/* copyright */
+
+    .copyright {
+        font-size: 1rem;
+    }
+
 }

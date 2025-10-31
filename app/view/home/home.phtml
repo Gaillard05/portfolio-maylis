@@ -9,15 +9,15 @@ include_once "../app/view/header/header.phtml";
                     <h1 class="identite">Maylis Gaillard</h1>
                     <h2 class="profession">Développeuse web junior</h2>
                 <div class="reseaux-sociaux">
-                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin icone-linkedin-accueil"></i></a>
+                    <a href="#"><i class="fa-brands fa-github icone-github-accueil"></i></a>
                 </div>
                 <div class="contenu-btn-contact">
                     <a href="#" class="btn-contact"><i class="fa-regular fa-envelope"></i> Me contacter </a>
                 </div>
                 <div class="scroll-bas">
                     <a href="#a-propos" class="btn-scroll-bas">
-                        <svg height="50" width="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 80" class="img-btn-scroll-bas">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 80" class="img-btn-scroll-bas">
                             <ellipse cx="20" cy="40" rx="18" ry="35" class="ellipse"/>
                             <line x1="20" y1="25" x2="20" y2="50" /> 
                             <polyline points="12, 45 20, 55 28, 45" />
@@ -163,13 +163,13 @@ include_once "../app/view/header/header.phtml";
                         <label for="nom">Nom</label>
                     </div>
                     <div class="champs-contact">
-                        <input type="text" name="nom" placeholder="Votre nom">
+                        <input type="text" name="nom" placeholder="Votre nom" class="input">
                     </div>
                     <div class="label">
                         <label for="mail">E-mail</label>
                     </div>
                     <div class="champs-contact">
-                        <input type="text" name="mail" placeholder="Votre e-mail">
+                        <input type="text" name="mail" placeholder="Votre e-mail" class="input">
                     </div>
                     <div class="label">
                         <label for="message">Message</label>
@@ -201,7 +201,7 @@ include_once "../app/view/header/header.phtml";
     <section class="conteneur-scroll-haut">
             <div class="contenu-scroll-haut">
                 <a href="#" class="btn-scroll-haut invisible">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="35" height="45" viewBox="0 0 50 51">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 50 51" class="bouton-scroll">
                         <image xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAzCAYAAADVY1sUAAAM1klEQVR4AdxZd1gUSRbvMJEhuWLChIoJ2U899Fx0V9HFVcwuoqune2dYM4ppFROzIqLIKrIqEoQZ/E48WEVUgoLOKBkUJKpIEhiCjMgwMDChu69qvGERQRiCf9x89bqqXr33e/Wbqq6q7saQ/5NfrxDhBgczvKNjh/FTcyZrxEeQMulUcEQ/KysuDemFX48QCRCkG/rHZ6zgJ+f8EZj8ImWUiXmNjkHfIgzB0jTC1tVLH2JiUrHebZWIl5QVfTU+3cnrcepkLrdniHWZSHBwMB4Qlz43MCXnT5zDFNEZjBAMw3YiCDm1XipBq0qKxe8qREnvKssE799WCmoqKzLr3okllEr5FY7TrBkMFldXR/fZCJsVuQFxGYed+MHDujNQXSLin5A1vWm4uZDGZD1AUcxWJq1D3rzKjsqMfeQQ5Hb8b2c2rh68f8WCgQ5LrC0dFs+ds2vh7Dm7F8+ZuNNmZr8/7NcPy01NtKqpqjwqldRmIghqSmMyXEaON3t5NTbNnet93Qjpwk8rIhdjkvsGJucG0mj4ExRDv616U/Q2Ifz22fP7t40+utbO5uzeHRcib95MLy4urgV9oYC0TuSzZ88qXLdveLx70WyX7daWk1Puh1nWlIv+TREUxWCx942YNDH3XNiDrVZWVlrdS50m4p+QPt1ATz8JEFhXW12lePgf/lnPvVvHeXEdf32Vnl7eusedrFOXjh9O3r3Uem1i+O1JtdVvQ1EU7Ws0aMjl1UdP3/jZ0bFvJ3GQThHxT8xaRaMzYyiUNM1LTxUGnzs5ied++teSkpL3nQ3UkZ33yWOv7RfMsi15lbuSUCrLdAwMbGfOt43Z43rJtCNf2N4hEX5i9j9pOC1Q2SRnJkbcORvkdmJ+3MOHedC5F4Q6um7FzRdpT79RKpR3mDqcSRO+tYw66R80tKNYnyXCS85ejeKYr1xWj0Zf5x0D0+hQfn6+vCPQ7ra72W8sLxG9tGusr7/JZLFHGY8ZF7WJe2bI53DbJRIQnz0VR3FfhVyOxd+7teOG1wVXAEQC+SKJu3Kl4m6Q788qheImnckym2I1m29pZ8duL3ibRM4LBIY4HeORFKmTLoh24bm7+gGAtlYhoO69dNfHR5byJOIXpVKZzuHozbFb84sziIYC+SS1SaQvu/9RsHqY5SQnJAlu8FyA1xcnAWKqk5ej4/uqN6IfSZIU9x1ovOugh/cMdUOryydEApOzpiAYuu19VVWdMJj/r9zcXEUrny9edVxtU0wo5LtQGo4NNzP/3dTUlNm6E58QoVDsGBgNndzkOJeUuLhur078hJzJvKTsHUc9eaNaB9emHlmRH0wpiYe6hn2mrnA4tK6170dE/JNyzDAE/aGqpKg4Joh3pbWxtvWApKy5YNV7guP4RZNJ5sI9p89N0BZDYx+yciVRL6s9jaAoMXzs+G1mZmYMTRvMMXjRCI5Se4Ahqyg360p+fn6dRt+VPCAhYz4g8CeKIbrQn8nmDDGfbhW++4zHWFjvioTExcQSBPFM16DPpJmr/jG7JUYzEY+wmAEYii1tkEhqo3g+11saaVuGI4Hj9BBSpdKXvKtWu9dUVSAMNnv4xOmzwg6dvzxSrdTyIuRyVQhBeIA/GzMeOgqctP8CaCZiaDzQFBj0qyzKf1ZQUFD6l4l2pYDELCsaht8kSRVYumOcMBw/BhGehAbzmmSyUDqLNdbUwjL6yEW/4VCvrbytFMUhCCUdYGLyNbjp9TX+zUQwCl0IlaKCvIcw74qAh6s5oOO3wfBzsuIfH7lweK8zR9+QBrE4egZZqS+frlLKFXwmmzVy1MSpkQfcvLVeAA7appQjBBnH5ugNm2GzvB/EhqIhglIUsoBQqZD0x8Io2KCt8JMzLWkMRjBFEHpPH0W5/L7f3g1gUAiKcECOkISK5bNlizIpJnQ7oVDy6Ez6uLHTLGI6eyiEGB+ESyoIZRGKYeigceNtPugQRE2EGxDARDH8KzCfZVVlRVrf5AFxGd+hGD2cBE9/SZG3L1w8coALApBAQFKHQJi6HBGoID5criwhO3EzIObHZOsMN//2m3tHLvl3eCiEvs1CYfdhuf8g40Ewh6KOYvjV0DEIRQ5UyJtEpaWlxbChsxKQnPMdzqSHkSqVQfKDcPcrJ44dAL7/IwFKyIcihuAfCkAFR6bo/q3tJEl50pnsMaMmTo446OE9DDR1KlEYVQpmkEIqeW+tcVAT0THQZwIFTSaRECCHArKOEy8xfQaOoYAEYZAYEerp5eR4CHi16U8ihDoWaFcnLperuleSs48kFDwagzlhtMXU6HW7DnaKTL24+h244eVgGaYBMBQIogbHaTQKVlQqJQnzzkpjQ9MhkqD004QPXLydj+8Ffu36UyT50QYGbBG4yRWX5m2lCJUfg8kazTbUXQz1HUmDpE4JOkyiKMYCGyMd2quJEEpwl6PgL8NpanawoTPyKitp3auMFHNPx31OwB5gg2s7iVASbR7BueC4DqdZdqxw+j0/r4B23D9SUxjCQBEEo1pEVBNREHIZQiEKNoeDfuTRQcVjz55a1y3rXwKzFpCg1kaiKLJdbDjN3PZtTyovL5e14fqJysBQXx9FETqhUjRpDrVqIuLS/LcoitaxOLq6I0eONPjEswcUOA3rsVO0Xr/BfcBoMJtkDW81XVMT4a5fL6EQUsbm6BqDhk7dcMBOq0SqKJZWDp8xVsnlA8Afj+ro6z/WmKmJgAqlbJRXgdea2LT5i3plRAiKwEGcHkkMBkN9YCzKyqzQAGqIIBiNFglYIqYTLZp3S41RT+QYgrW7ommDD+4nDEGxESqlgnz+IFqg8cU0Bbm8MRKW+w4aMgvmPS1gE+sRIqbzlxujKDVDIq56IRLlf3yPwE7nP33ygiTJgj79B0xevmn7eKjrSaFICm5e3YZUIRh4OkT1RIWv44qLi5s0gM0j4n7gQINKqeSD06vO1Fnfb9cY9FROp7Pg++Buwdl7RjDBK6oNiqYmMun+vWstwZqJQKW0pppPUVRtf5MRP63evM8I6rorjdI6cVOjjJA3SJ92F8ti6vB5YDMcUZ7/OhZvbExuifcREYclc0vAO6Tr4O2e0ZT51gdbGna17Gm/8bzr1nUjr1/2yOgqBvQ7F5zABnuRC6FQohmJwlNCoVAF9Rr5iAhUiovyXSmEem9kPGSnw6nzM6CuOwJ33sLc3BKA0eHuD2zaTf1GfLUTzJYJhS8yo8R5uY9aG35C5OBa27JGWYMjhuHMMdO+8bexs2t+Cmvt/KXq/MRMcFwnT9TX1kgFt4L2tB4N2I9PiEBljCA8QKUi7+jpG45ZtMn+vJWWH10gRk+JX3zacBSnXSUJkvH8ccyRuIiIvLaw2yQSwuUq3hS+2gmXY70+RmuWODhetrCwUB+X2wLpLZ2vIGkIk84OQ1F0WGb8kxAfF65Xe7HaJAKNuWCKSSoqloB5KTYyHrpprdOZizY2NvABDDb3tiABj9NHMzn6EQiKTMzLTHsUesl9CwhKAGkztUsEWu9aZp0rLilbBo74ZUaDBm9esu9YmL3jqV6/Z3gJGd9jbKYQjMTX+ZnpgmvOR2wLCwslsE/tyWeJQKd9dvMS3lWXW4GXyPm6Bn3mTV64MPXcnQe9cowJzslh8BOzuBiNEYFQlHFG/JNbV51+XQh28A430w6JQDJ7FlkXpsUKv2+orw+nMejD+g0cGu0f+9zfOfBWjxxlgsE3e37yi0VNDchTcHh1kkklSPzdW8cF13x+Kisra4R96Eg6RQSCeB5yKHl42W2p9J14A0EoK+ks5vph48Zm+QpT7v4RIbSx43IZ0E4b8RY8NeIl5uySmZhngoPgHYpCzEUFr4WR1/yn+Jw85gw+ZSs7i9dpIhAwJCSE2GEzk5ebmzqhvrb2N/Ac3sDi6C0yNOofvnjBqgJ+UtZV/7iMTf6xGdPc7wqM4FTRSIBAwOLHPh8TmJw9j5+cc/ha6ov7OhydUrBbXwAP32ZvS0qzE8NDbaOunJsbxvPJgvG0Ea2IaIDdNm6UbptryY3m80dVlRbvra+rTaMoYiCG0zbQmQxfOouR1H/gwMqmBrRB3oDVQ8F1B0hRJuMliuFRGIbBr2A/SGrEZEH28/BInu/yINfDFldOHA1ta7PTxP1c3iUiGsAgn9/F+3+0Ob/NevrUe74eY/LSn+2oFpX4SsRiQV11tahRWtcgq5c2NsqkDRJxtbSmXPSq8k1hGFiJTofzryx13/rzYO761YuCvDxuazONNPFb5t0i0gKICvHzK3LevPby3mXzNu+0+W7OzgUzTYKcDxmd3bym/2arvxvZ28zq67BsrtmBFQuX/bZxjeONixfudGY1ahHjs8WeItJWEApOE/DBSA4a4UYGD41QQLXnU28S6fnefgbxvwAAAP//hydKKAAAAAZJREFUAwByeXiy7v1x+AAAAABJRU5ErkJggg==" x="0" y="0" width="50" height="51"/>
                     </svg>
                 </a>
