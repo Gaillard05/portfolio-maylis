@@ -105,6 +105,42 @@ header, .menu, footer {
     justify-content: space-between;
 }
 
+header, .conteneur-navbar, .accueil {
+    animation:  fadeIn 2s ease-in-out;
+}
+
+@keyframes curseur {
+    0%{opacity: 0}
+    50%{opacity: 1}
+    100%{opacity: 0}
+
+}
+
+.relative {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.identite, .profession {
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.curseur1, .curseur2 {
+    margin-top: 3%;
+    width: 3px;
+    height: 60px;
+    background-color: #ecf3f5;
+    animation: curseur 2s ease infinite;
+}
+
+.curseur2 {
+    height: 40px;
+}
+
 .a-propos, .projets {
     padding: 4rem 0 0;
 }
@@ -255,6 +291,8 @@ a {
 .scroll-bas {
     position: relative;
 }
+
+/* animation flèche qui bouge de haut en bas */
 
 @keyframes flecheSubtile {
     0%, 100% {
@@ -786,8 +824,8 @@ footer {
 
     /* boutton de scroll vers le haut */
     .bouton-scroll {
-        width: 50px;
-        height: 50px;
+        width: 60px;
+        height: 60px;
     }
 
      .conteneur-scroll-haut {
@@ -866,6 +904,10 @@ footer {
         margin: 1%;
     }
 
+    .menu-principal a:hover {
+        color:#a3cbd7;
+    }
+
     /* section accueil */
 
     .fond-accueil {
@@ -930,10 +972,6 @@ footer {
     .conteneur-scroll-haut {
         bottom: 25%;
         margin-right: 5%;
-    }
-
-    .bouton-scroll {
-        width: 70%;
     }
 
 /* icones footer */
