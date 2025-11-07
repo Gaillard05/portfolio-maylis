@@ -1,5 +1,11 @@
 <?php
+    require '../app/config/autoload.php';
+    require '../app/services/router.php';
+    require '../app/controllers/home/HomeController.php';
+    require '../app/controllers/projet/ProjetController.php';
+    
 
-require_once "../app/view/home/home.phtml"
-
+    $router = new Router();
+    $router->loadFromIni('../app/config/routes.ini');
+    $router->dispatch();
 ?>
