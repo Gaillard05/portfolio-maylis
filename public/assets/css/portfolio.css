@@ -362,6 +362,7 @@ line, polyline {
     object-position: center;
     outline: none;
     border-radius: 50%;
+    border: 2px solid #ecf3f5;
 }
 
 .contenu-a-propos {
@@ -469,6 +470,10 @@ line, polyline {
 
 .contenu-contact-form {
     width: 100%;
+}
+
+.description {
+    text-wrap: wrap;
 }
 
 .description, .info {
@@ -614,11 +619,6 @@ footer {
 
 /* portfolio - version mobile large */
 @media (max-width: 425px) {
-     /* section accueil */
-
-    /* .fond-accueil {
-        height: 900px;
-    } */
 
     .profession {
         margin-top: 10%;
@@ -631,6 +631,10 @@ footer {
     .btn-contact {
        margin-top: 3%;
        margin-bottom: 4%;
+    }
+
+    .description {
+        text-wrap: wrap;
     }
 
 
@@ -787,6 +791,10 @@ footer {
 
     .contact {
         padding: 8rem 0 0;
+    }
+
+    .description {
+        text-wrap: wrap;
     }
 
     .description, .info {
@@ -966,6 +974,114 @@ footer {
         width: 5%;
         height: 5%;
     }
+
+
+/* section a propos */
+
+    .contenus-a-propos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .contenu-a-propos-img {
+        margin-top: 5%;
+        width: 10%;
+    }
+
+    .contenu-a-propos {
+        width: 60%;
+    }
+
+    .titre-poste {
+        font-size: 1.6rem;
+    }
+
+/* section technologies */
+
+    .contenus-prog-dev, .contenus-bdd-lib-cms, .contenus-lib-cms {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .contenus-bdd-lib-cms {
+        justify-content: space-between;
+    }
+
+    .contenu-programmation {
+        width: 55%;
+    }
+
+    .contenu-developpement {
+        width: 45%;
+    }
+
+    .contenu-base-de-donnee {
+        width: 40%;
+    }
+
+    .contenus-lib-cms {
+        width: 50%;
+    }
+
+    .contenu-librairies, .contenu-cms {
+        width: 50%;
+    }
+
+
+/* section projets */
+
+    .contenu-projets {
+        display: flex;
+        flex-direction: row;
+    }
+
+/* section contact */
+
+    .contenus-contact {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .info,  .info-moyen-contact {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    .info-moyen-contact {
+        margin: 3.5%;
+    }
+
+    .contenu-contact-form {
+        width: 40%;
+    }
+    
+    .form {
+        width: 100%;
+    }
+
+    .input, .txt-message {
+       width: 340px; 
+    }
+
+    .txt-message {
+        height: 200px;
+    }
+
+    .contenus-mc-cv {
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+    }
+
+    .contenu-mailto, .contenu-cv {
+        width: 70%;
+        margin-bottom: 5%;
+    }
+    
 
 /*  btn de scroll vers le haut */
 
