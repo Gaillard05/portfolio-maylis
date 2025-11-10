@@ -145,7 +145,7 @@ header, .conteneur-navbar, .accueil {
     padding: 4rem 0 0;
 }
 
-.a-propos, .technologies, .projets, .contact {
+.a-propos, .technologies, .projets, .contact, .projet{
     width: 100%;
     background-color: #14191e;
     margin-bottom: 5%;
@@ -614,6 +614,16 @@ footer {
 
 .icone-linkedin, .icone_github {
     font-size: 22px;
+}
+
+/* projet - version mobile */
+
+.projet {
+    padding: 8rem 0 0;
+}
+
+.contenu-projet {
+    margin: 0 auto;
 }
 
 
