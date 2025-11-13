@@ -3,10 +3,42 @@ include_once "../app/views/header/header.phtml";
 ?>
 
 <main>
-    <section class="projet" id="projet">
-        <h2>Mon projet</h2>
-        <div class="contenus-projet">
-            <div class="contenu-img-projet">
+    <section class="projet" id="projet"> 
+            <h2><?php echo $projet['titre'] ?></h2>
+            <div class="contenus-projet">
+               <div class="contenu-img-projet">
+                    <img src="<?php echo $projet['image'] ?>" alt="image-projet" class="img-projet">
+                </div>
+                <div class="contenus-el-projet">
+                    <div class="contenu-pg-projet">
+                        <p><?php echo $projet['description_longue'] ?></p>
+                    </div>
+                    <div class="contenu-btn-github">
+                            <a href=<?php echo $projet['lien'] ?> class="btn-github">Voir le projet sur <i class="fa-brands fa-github icone_btn_github"></i></a>
+                    </div>
+                    <div class="contenu-techno">
+                        <h3>Technologies utilisées</h3>
+                        <div class="contenu-icones-techno">
+                            <div class="contenu-el-icones">
+                                <i class="fa-brands fa-symfony ico-symfony"></i>
+                                <p class="titre-ico-symfony">Symfony</p>
+                            </div>
+                            <div class="contenu-el-icones">
+                                <i class="fa-brands fa-css3-alt icon-css"></i>
+                                <p class="titre-icones">CSS</p>
+                            </div>
+                            <div class="contenu-el-icones">
+                                <i class="fa-brands fa-js ico-js"></i>
+                                <p class="titre-ico-js">JavaScript</p>
+                            </div>
+                            <div class="contenu-el-icones">
+                                <img src="../assets/img/icone/icone_mysql.png" alt="icone_mysql" class="ico_mysql">
+                                <p class="titre-ico-mysql">MYSQL</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <!-- <div class="contenu-img-projet">
                 <img src="https://placehold.co/600x400" alt="image-projet" class="img-projet">
             </div>
             <div class="contenus-el-projet">
@@ -40,7 +72,7 @@ include_once "../app/views/header/header.phtml";
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
             
     </section>

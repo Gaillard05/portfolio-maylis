@@ -1,8 +1,17 @@
 <?php
+// require "../app/models/ProjetModel.php";
 
 class ProjetController {
-    public function index() {
-       require '../app/views/projet/projet.phtml';
+    public function show($slug) {
+
+        $projetModel = new ProjetModel();
+        $projet = $projetModel->getProjetBySlug($slug);
+
+        if(!$projet) {
+            die("Projet introuvable");
+        }
+
+        require '../app/views/projet/projet.phtml';
     }
 }
 
