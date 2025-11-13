@@ -147,24 +147,14 @@ include_once "../app/views/header/header.phtml";
     <section class="projets" id="projets">
         <h2 class="titre-projet">Projets</h2>
         <div class="contenu-projets">
-            <div class="card-gusto-coffee">
-                <img src="https://placehold.co/600x400" alt="projet gusto-coffee" class="photo-gusto-coffee">
-                <h4 class="titre-projet">Gusto Coffee</h4>
-                <p class="para-gusto-coffee">Application web réalisée dans le cadre de ma soutenance à Digital School of Paris, permettant de réserver facilement des espaces de travail collaboratif dans un coffe shop.</p>
-                <a href="/projet" class="btn-savoir-plus">En savoir <i class="fa-solid fa-circle-plus"></i></a>
-            </div>
-            <div class="card-effreiFlix">
-                <img src="https://placehold.co/600x400" alt="projet effreiFlix" class="photo-effreiFlix">
-                <h4 class="titre-projet">EFREIFLIX</h4>
-                <p class="para-effreiFlix">Application type Netflix réalisée pour un cours sur les micro-frontends à L’EFREI, démontrant la composition modulaire d’interfaces web et la communicatin entre composants indépendants</p>
-                <a href="/projet" class="btn-savoir-plus">En savoir <i class="fa-solid fa-circle-plus"></i></i></a>
-            </div>
-            <div class="card-streamlit-LLM">
-                <img src="https://placehold.co/600x400" alt="projet streamlit-LLM" class="photo-streamlit-LLM">
-                <h4 class="titre-projet">Streamlit-LLM <br> (Artificial Education)</h4>
-                <p class="para-streamlit-LLM">Mini-application réalisée pendant un cours de machine learning à L’EFREI, conçue pour aider à la révision des cours via une inteface type ChatGPT.</p>
-                <a href="/projet" class="btn-savoir-plus">En savoir <i class="fa-solid fa-circle-plus"></i></a>
-            </div>
+            <?php foreach($projets as $projet): ?> 
+                <div class="card-gusto-coffee">
+                    <img src="<?php echo $projet['image']?>" alt="projet gusto-coffee" class="photo-gusto-coffee">
+                    <h4 class="titre-projet"><?php echo $projet['titre']?></h4>
+                    <p class="para-gusto-coffee"><?php echo $projet['description_courte']?></p>
+                    <a href="/projet/<?= $projet['slug']?>" class="btn-savoir-plus">En savoir <i class="fa-solid fa-circle-plus"></i></a>
+                </div>
+            <?php endforeach; ?> 
         </div>
     </section>
     <section class="contact" id="contact">

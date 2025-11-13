@@ -6,9 +6,12 @@ spl_autoload_register(function (string $class):void {
     $class = ltrim($class, '\\');
 
     $mappings = [
-        'App\\Services\\' => __DIR__. '/../app/services',
-        'App\\Controllers\\Home' => __DIR__.'/../app/controllers/home',
-        'App\\Controllers\\Projet' => __DIR__.'/../app/controllers/projet',
+        'App\\Services\\' => __DIR__. '/../app/services/router',
+        'App\\Controllers\\Home' => __DIR__.'/../app/controllers/home/HomeController',
+        'App\\Controllers\\Projet' => __DIR__.'/../app/controllers/projet/ProjetController',
+        'App\\Config\\ENV' => __DIR__.'/../app/config/env',
+        'App\\Config\\DATABASE' => __DIR__.'/../app/config/database',
+        'App\\Models\\ProjetModel' => __DIR__.'/../app/models/ProjetModel',
         'App\\' => '../app',
     ];
 

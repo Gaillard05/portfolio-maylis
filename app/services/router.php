@@ -39,11 +39,30 @@ class Router {
             if($section === '') $section = 'home';
 
             call_user_func([$controller, $action], $section);
-        } else {
-            http_response_code(404);
-            require_once "../app/views/erreurs/404.phtml";
-        }
-    }
+
+            return;
+        } 
+
+        if(isset($this->routes[$method])) {
+            foreach($this->routes[$method] as $route => [$controller, $action]) {
+                if(strpos($route, ':') === false) continue;
+
+                $pattern = preg_replace('/:[^\/]+/', '([^/]+)', $route);
+                $pattern = "#^$pattern$#";
+                    
+                if(preg_match($pattern, $uri, $matches)) {
+                    array_shift($matches);
+                    call_user_func_array([$controller, $action], $matches);
+                    return;
+                }
+
+            }
+        } 
+        
+        http_response_code(404);
+        require_once "../app/views/erreurs/404.phtml";
+       
+    } 
    
 }
 
