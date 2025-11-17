@@ -81,7 +81,8 @@ p, strong {
 .titre-icone-symfony,
 .titre-icone-codeIgniter,
 .titre-icone-react,
-.titre-icone-mysql
+.titre-icone-mysql,
+.titre-ico
 {
     margin: 5%;
     text-align: center;
@@ -667,7 +668,7 @@ label, input, .txt-message, .btn-envoyer {
     margin-left: 12%;
 }
 
-.titre-ico-symfony, .titre-ico-js, .titre-ico-mysql {
+.titre-ico, .titre-ico-symfony, .titre-ico-js, .titre-ico-mysql {
     margin-left: 6%;
 }
 

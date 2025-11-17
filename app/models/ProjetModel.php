@@ -25,6 +25,13 @@ class ProjetModel {
         $projet = $result->fetch(PDO::FETCH_ASSOC);
         return $projet ?: null;
     }
+
+    public function getTechnologies($projetId) {
+        $result = $this->db->prepare("SELECT * FROM technologies t JOIN projets_technologies pt ON t.id = pt.technologie_id WHERE pt.projet_id = :projet_id");
+        $result->execute([':projet_id' => $projetId]);
+        $technologies = $result->fetchAll(PDO::FETCH_ASSOC);
+        return $technologies ?: null;
+    }
 }
 
 

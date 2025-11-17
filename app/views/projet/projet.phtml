@@ -19,60 +19,21 @@ include_once "../app/views/header/header.phtml";
                     <div class="contenu-techno">
                         <h3>Technologies utilisées</h3>
                         <div class="contenu-icones-techno">
-                            <div class="contenu-el-icones">
-                                <i class="fa-brands fa-symfony ico-symfony"></i>
-                                <p class="titre-ico-symfony">Symfony</p>
-                            </div>
-                            <div class="contenu-el-icones">
-                                <i class="fa-brands fa-css3-alt icon-css"></i>
-                                <p class="titre-icones">CSS</p>
-                            </div>
-                            <div class="contenu-el-icones">
-                                <i class="fa-brands fa-js ico-js"></i>
-                                <p class="titre-ico-js">JavaScript</p>
-                            </div>
-                            <div class="contenu-el-icones">
-                                <img src="../assets/img/icone/icone_mysql.png" alt="icone_mysql" class="ico_mysql">
-                                <p class="titre-ico-mysql">MYSQL</p>
-                            </div>
+                            <?php foreach($technologies as $technologie): ?>
+                                <div class="contenu-el-icones">
+                                    <?php if(isset($technologie['icone']) != null ): ?>
+                                        <i class="<?= $technologie['icone']; ?> ico"></i>
+                                    <?php elseif(isset($technologie['image']) != null ): ?>
+                                        <img src="../assets/img/icone/<?= $technologie['image'] ?>" alt="icone_<?= $technologie['titre'] ?>" class="ico_mysql">
+                                    <?php else: ?>
+                                        <p class="titre-ico"><?= $technologie['titre']; ?></p>
+                                    <?php endif;?>
+                                    <p class="titre-ico"><?= $technologie['titre']; ?></p>
+                                </div>
+                            <?php endforeach; ?>
                         </div>
                     </div>
                 </div>
-            <!-- <div class="contenu-img-projet">
-                <img src="https://placehold.co/600x400" alt="image-projet" class="img-projet">
-            </div>
-            <div class="contenus-el-projet">
-                <div class="contenu-pg-projet">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae in ea tempore esse? Adipisci ullam maxime id quibusdam consectetur ducimus maiores sapiente totam praesentium recusandae, architecto possimus assumenda, incidunt enim.
-                            Exercitationem ea debitis nemo deserunt molestiae quod vel beatae sint incidunt dicta numquam repellat, sequi cum veritatis. Debitis, ducimus tenetur iure illum voluptates dolorem, praesentium quae magnam quod exercitationem velit?
-                        </p>
-                    </div>
-                    <div class="contenu-btn-github">
-                            <a href="#" class="btn-github">Voir le projet sur <i class="fa-brands fa-github icone_btn_github"></i></a>
-                    </div>
-                    <div class="contenu-techno">
-                        <h3>Technologies utilisées</h3>
-                        <div class="contenu-icones-techno">
-                            <div class="contenu-el-icones">
-                                <i class="fa-brands fa-symfony ico-symfony"></i>
-                                <p class="titre-ico-symfony">Symfony</p>
-                            </div>
-                            <div class="contenu-el-icones">
-                                <i class="fa-brands fa-css3-alt icon-css"></i>
-                                <p class="titre-icones">CSS</p>
-                            </div>
-                            <div class="contenu-el-icones">
-                                <i class="fa-brands fa-js ico-js"></i>
-                                <p class="titre-ico-js">JavaScript</p>
-                            </div>
-                            <div class="contenu-el-icones">
-                                <img src="../assets/img/icone/icone_mysql.png" alt="icone_mysql" class="ico_mysql">
-                                <p class="titre-ico-mysql">MYSQL</p>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
             </div>
             
     </section>
