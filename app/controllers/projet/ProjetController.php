@@ -1,5 +1,4 @@
 <?php
-// require "../app/models/ProjetModel.php";
 
 class ProjetController {
     public function show($slug) {

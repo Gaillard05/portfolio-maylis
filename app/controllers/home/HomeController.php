@@ -3,7 +3,7 @@
 require "../app/models/ProjetModel.php";
 
 class HomeController {
-    public function index(string $section='home'): void {
+    public function index() {
 
         #section projet de la page d'accueil
 
@@ -13,17 +13,17 @@ class HomeController {
         require '../app/views/home/home.phtml';
     }
 
-    public function handleAboutMe(): void {
+    public function handleAboutMe() {
         header('location: /#a-propos');
         exit;
     }
 
-    public function handleProjets(): void {
+    public function handleProjets() {
         header('location: /#projets');
         exit;
     }
 
-    public function handleContact(): void {
+    public function handleContact() {
         header('location: /#contact');
         exit;
     }
