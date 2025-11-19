@@ -9,6 +9,7 @@ class HomeController {
 
         $projetModel = new ProjetModel();
         $projets = $projetModel->getProjets();
+        $listCatTech = $projetModel->getCatAndTechno();
 
         require '../app/views/home/home.phtml';
     }

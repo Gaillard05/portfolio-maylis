@@ -24,11 +24,11 @@ include_once "../app/views/header/header.phtml";
                                     <?php if(isset($technologie['icone']) != null ): ?>
                                         <i class="<?= $technologie['icone']; ?> ico"></i>
                                     <?php elseif(isset($technologie['image']) != null ): ?>
-                                        <img src="../assets/img/icone/<?= $technologie['image'] ?>" alt="icone_<?= $technologie['titre'] ?>" class="ico_mysql">
+                                        <img src="../assets/img/icone/<?= $technologie['image'] ?>" alt="icone_<?= $technologie['titre_tech'] ?>" class="ico_mysql">
                                     <?php else: ?>
-                                        <p class="titre-ico"><?= $technologie['titre']; ?></p>
+                                        <p class="titre-ico"><?= $technologie['titre_tech']; ?></p>
                                     <?php endif;?>
-                                    <p class="titre-ico"><?= $technologie['titre']; ?></p>
+                                    <p class="titre-ico"><?= $technologie['titre_tech']; ?></p>
                                 </div>
                             <?php endforeach; ?>
                         </div>
