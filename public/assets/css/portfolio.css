@@ -57,10 +57,8 @@ p, strong {
 .fa-html5, 
 .fa-css3-alt, 
 .fa-symfony,
-.icone_codeIgniter, 
+.icones,
 .fa-react,
-.icone_mysql,
-.icone_jquery,
 .fa-bootstrap,
 .fa-wordpress
 {
@@ -69,23 +67,13 @@ p, strong {
     font-size: xx-large;
 }
 
-.icone_codeIgniter, .icone_mysql, .icone_jquery {
+.icones {
     width: 30px;
 }
 
-.titre-icone-php, 
-.titre-icone-js, 
-.titre-icone-python, 
-.titre-icone-html5,
-.titre-icone-css3, 
-.titre-icone-symfony,
-.titre-icone-codeIgniter,
-.titre-icone-react,
-.titre-icone-mysql,
 .titre-ico
 {
     margin: 5%;
-    text-align: center;
 }
 
 header, footer {
@@ -312,7 +300,7 @@ a {
     position: absolute;
     background-position: center;
     top: 0;
-    left: 20vh;
+    left: 13vh;
     right: 20vh;
 }
 
@@ -383,21 +371,13 @@ line, polyline {
 }
 
 .titre-technologies, 
-.titre-programmation, 
-.titre-developpement, 
-.titre-bdd, 
-.titre-librairies,
-.titre-cms 
+.titre-cat-tech
 {
     text-align: center;
     margin: 5%;
 }
 
-.contenu-icone-program, 
-.contenu-icone-dev, 
-.contenu-icone-bdd,
-.contenu-icone-libs,
-.contenu-icone-cms
+.contenus-tech
 {
     display: flex;
     flex-direction: row;
@@ -405,18 +385,7 @@ line, polyline {
     margin: 5%;
 }
 
-.contenu-icone-php, 
-.contenu-icone-js, 
-.contenu-icone-python, 
-.contenu-icone-html5, 
-.contenu-icone-css3, 
-.contenu-icone-symfony, 
-.contenu-icone-codeIgniter,
-.contenu-icone-react, 
-.contenu-icone-mysql,
-.contenu-icone-bootstrap,
-.contenu-icone-jquery,
-.contenu-icone-wordpress
+.contenu-icones
 {
     display: flex;
     flex-direction: column;
@@ -668,15 +637,11 @@ label, input, .txt-message, .btn-envoyer {
     margin-left: 12%;
 }
 
-.titre-ico, .titre-ico-symfony, .titre-ico-js, .titre-ico-mysql {
-    margin-left: 6%;
-}
-
 .titre-ico-mysql{
     margin-top: 3.5%;
 }
 
-.fa-symfony.ico-symfony, .fa-css3-alt.icon-css, .fa-js.ico-js, .ico_mysql {
+.fa-symfony.ico-symfony, .fa-css3-alt.icon-css, .fa-js.ico-js, .icones, .fa-python {
     width: 35px;
 }
 
@@ -708,6 +673,8 @@ label, input, .txt-message, .btn-envoyer {
 
     .btn-scroll-bas {
         top: 1vh;
+        left: 16vh;
+        margin-left: 8%;
     }
 
     .img-btn-scroll-bas {
@@ -716,7 +683,6 @@ label, input, .txt-message, .btn-envoyer {
     }
 
     .contenu-icones {
-        margin-left: 8%;
         margin-top: 4%;
     }
 
@@ -782,7 +748,7 @@ label, input, .txt-message, .btn-envoyer {
     }
 
     .contenu-accueil {
-        padding: 12rem 0 12rem 0;
+        padding: 10rem 0 12rem 0;
     }
 
     .identite {
@@ -812,6 +778,7 @@ label, input, .txt-message, .btn-envoyer {
 
     .btn-scroll-bas {
         top: 10vh;
+        margin-left: 6%;
     }
 
     svg.img-btn-scroll-bas {
@@ -839,8 +806,7 @@ label, input, .txt-message, .btn-envoyer {
     .fa-css3-alt, 
     .fa-symfony,
     .fa-react,
-    .icone_mysql,
-    .icone_jquery,
+    .icones,
     .fa-bootstrap,
     .fa-wordpress
     {
@@ -848,9 +814,7 @@ label, input, .txt-message, .btn-envoyer {
         margin-bottom: 10%;
     }
 
-    .icone_codeIgniter, 
-    .icone_mysql,
-    .icone_jquery
+    .icones
     {
         width: 60px;
     }
@@ -960,7 +924,7 @@ label, input, .txt-message, .btn-envoyer {
         font-size: 35px;
     }
 
-    .fa-symfony.ico-symfony, .fa-css3-alt.icon-css, .fa-js.ico-js, .ico_mysql {
+    .fa-symfony.ico-symfony, .fa-css3-alt.icon-css, .fa-js.ico-js {
         width: 80px;
     }
 
@@ -1029,12 +993,12 @@ label, input, .txt-message, .btn-envoyer {
         background-image: url("../img/fond/image_fond_couleur.png");
         top: 0;
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: cover;
         padding: 1%;
     }
 
     .contenu-accueil {
-        padding: 10rem 0 10rem 0;
+        padding: 15rem 0 10rem 0;
     }
 
     .identite {
@@ -1056,7 +1020,7 @@ label, input, .txt-message, .btn-envoyer {
 
     .contenu-btn-contact {
         margin-top: 1%;
-        margin-bottom: 5%;
+        margin-bottom: 3%;
     }
 
     .btn-contact {
@@ -1073,6 +1037,7 @@ label, input, .txt-message, .btn-envoyer {
 
     .btn-scroll-bas {
         top: 0;
+        left: 5rem;
     }
 
     .img-btn-scroll-bas {
@@ -1105,35 +1070,19 @@ label, input, .txt-message, .btn-envoyer {
 
 /* section technologies */
 
-    .contenus-prog-dev, .contenus-bdd-lib-cms, .contenus-lib-cms {
+    .contenus {
         display: flex;
         flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
     }
 
-    .contenus-bdd-lib-cms {
-        justify-content: space-between;
+    .contenu-tech {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
     }
-
-    .contenu-programmation {
-        width: 55%;
-    }
-
-    .contenu-developpement {
-        width: 45%;
-    }
-
-    .contenu-base-de-donnee {
-        width: 40%;
-    }
-
-    .contenus-lib-cms {
-        width: 50%;
-    }
-
-    .contenu-librairies, .contenu-cms {
-        width: 50%;
-    }
-
 
 /* section projets */
 

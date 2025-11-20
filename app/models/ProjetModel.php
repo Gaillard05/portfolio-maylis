@@ -42,7 +42,8 @@ class ProjetModel {
         $result = $this->db->prepare("SELECT * FROM technologies t 
                                     LEFT JOIN projets_technologies pt 
                                     ON t.id = pt.technologie_id 
-                                    WHERE pt.projet_id = :projet_id");
+                                    WHERE pt.projet_id = :projet_id 
+                                    ORDER BY t.titre_tech DESC");
         $result->execute([':projet_id' => $projetId]);
         $technologies = $result->fetchAll(PDO::FETCH_ASSOC);
         return $technologies ?: null;
@@ -58,7 +59,7 @@ class ProjetModel {
                                     FROM categories c
                                     LEFT JOIN technologies t
                                     ON t.id_categorie = c.id
-                                    ORDER BY c.id;
+                                    ORDER BY c.id ASC, t.id ASC;
         ");
         $rows = $result->fetchAll(PDO::FETCH_ASSOC);
 

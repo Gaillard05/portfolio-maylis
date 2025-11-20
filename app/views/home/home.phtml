@@ -57,17 +57,17 @@ include_once "../app/views/header/header.phtml";
     <section class="technologies">
             <div class="contenu-technologies">
                     <h3 class="titre-technologies">Technologies</h3>
-                <div class="contenus-prog-dev">
+                <div class="contenus">
                     <?php foreach($listCatTech as $techCat): ?>
-                        <div class="contenu-programmation">
-                            <h4 class="titre-programmation"><?= $techCat['titre_cat'] ?></h4>
-                            <div class="contenu-icone-program">
+                        <div class="contenu-tech">
+                            <h4 class="titre-cat-tech"><?= $techCat['titre_cat'] ?></h4>
+                            <div class="contenus-tech">
                                 <?php foreach($techCat['technos'] as $techno ): ?>
-                                    <div class="contenu-icone">
+                                    <div class="contenu-icones">
                                     <?php if(isset($techno['icone']) != null ): ?>
                                         <i class="<?= $techno['icone']; ?> ico"></i>
                                     <?php elseif(isset($techno['image']) != null ): ?>
-                                        <img src="../assets/img/icone/<?= $techno['image'] ?>" alt="icone_<?= $techno['titre_tech'] ?>">
+                                        <img src="../assets/img/icone/<?= $techno['image'] ?>" alt="icone_<?= $techno['titre_tech']?>" class="icones">
                                     <?php else: ?>
                                         <p class="titre-ico"><?= $techno['titre_tech']; ?></p>
                                     <?php endif;?>
