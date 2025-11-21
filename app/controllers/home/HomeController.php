@@ -9,6 +9,9 @@ class HomeController {
 
         $projetModel = new ProjetModel();
         $projets = $projetModel->getProjets();
+
+        #contenu technologies de la section à propos de moi de la page d'accueil
+
         $listCatTech = $projetModel->getCatAndTechno();
 
         require '../app/views/home/home.phtml';

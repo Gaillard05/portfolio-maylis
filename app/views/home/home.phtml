@@ -98,10 +98,22 @@ include_once "../app/views/header/header.phtml";
     <section class="contact" id="contact">
         <h2 class="titre-contact">Contact</h2>
         <p class="description">Projets ou missions freelance ? Parlons en !</p>
+        <?php if(!empty($_SESSION['sucess'])):?>
+            <div class="message_sucess">
+                <i class="fa-solid fa-circle-check"></i> 
+                <p><?= $_SESSION['sucess']; unset($_SESSION['sucess']); ?></p>
+            </div>
+        <?php endif;?>
+        <?php if(!empty($_SESSION['error'])):?>
+            <div class="message_error">
+                <i class="fa-solid fa-triangle-exclamation"></i> 
+                <p><?= $_SESSION['error']; unset($_SESSION['error']); ?></p>
+            </div>
+        <?php endif;?>
         <div class="contenus-contact">
             <div class="contenu-contact-form">
                 <p class="info">Remplissez le formulaire pour me contacter</p>
-                <form action="#" method="post" class="form">
+                <form action="/contact/send" method="post" class="form">
                     <div class="contenu-form">
                         <div class="label">
                             <label for="nom">Nom</label>
@@ -114,6 +126,12 @@ include_once "../app/views/header/header.phtml";
                         </div>
                         <div class="champs-contact">
                             <input type="text" name="mail" placeholder="Votre e-mail" class="input">
+                        </div>
+                        <div class="label">
+                            <label for="object">Object</label>
+                        </div>
+                        <div class="champs-contact">
+                            <input type="text" name="object" placeholder="Object de votre demande" class="input">
                         </div>
                         <div class="label">
                             <label for="message">Message</label>
