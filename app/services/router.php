@@ -22,6 +22,7 @@ class Router {
         $r->addRoute('GET', '/a-propos', ['HomeController', 'handleAboutMe']);
         $r->addRoute('GET', '/projets', ['HomeController', 'handleProjets']);
         $r->addRoute('GET', '/contact', ['HomeController', 'handleContact']);
+        $r->addRoute('POST', '/contact/send', ['ContactController', 'send']);
         $r->addRoute('GET', '/projet/{slug:[a-zA-Z0-9\-]+}', ['ProjetController', 'show']);
     }
 

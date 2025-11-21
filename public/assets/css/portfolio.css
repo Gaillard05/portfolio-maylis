@@ -67,6 +67,25 @@ p, strong {
     font-size: xx-large;
 }
 
+.fa-linkedin,
+.fa-github, 
+.fa-php, 
+.fa-js, 
+.fa-python, 
+.fa-html5, 
+.fa-css3-alt, 
+.fa-symfony,
+.icones,
+.fa-react,
+.fa-bootstrap,
+.fa-wordpress,
+.fa-triangle-exclamation,
+.fa-circle-check
+{
+    color: #a3cbd7;
+    font-size: xx-large;
+}
+
 .icones {
     width: 30px;
 }
@@ -437,6 +456,24 @@ line, polyline {
     align-items: center;
     margin: 0 auto;
     padding: 5rem 0 0;
+}
+
+.message_error, .message_sucess {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1.5%;
+    margin-bottom: 2%;
+    text-align: center;
+}
+
+.message_error {
+    background-color: #2d6d7f;
+}
+
+.message_sucess {
+    background-color: #61b4cb;
 }
 
 .contenu-contact-form {

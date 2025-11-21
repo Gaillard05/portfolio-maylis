@@ -4,8 +4,12 @@
     $dotenv = Dotenv::createImmutable("../app/config");
     $dotenv->load();
     require '../app/services/router.php';
+    require '../app/services/mailer.php';
     require '../app/controllers/home/HomeController.php';
+    require '../app/controllers/contact/ContactController.php';
     require '../app/controllers/projet/ProjetController.php';
+
+    session_start();
     
     $httpMethod = $_SERVER['REQUEST_METHOD'];
     $uri = $_SERVER['REQUEST_URI'];
