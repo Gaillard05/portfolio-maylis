@@ -113,34 +113,38 @@ include_once "../app/views/header/header.phtml";
         <div class="contenus-contact">
             <div class="contenu-contact-form">
                 <p class="info">Remplissez le formulaire pour me contacter</p>
-                <form action="/contact/send" method="post" class="form">
+                <form action="/contact/send" method="post" class="form" id="form-contact">
                     <div class="contenu-form">
                         <div class="label">
                             <label for="nom">Nom</label>
                         </div>
                         <div class="champs-contact">
-                            <input type="text" name="nom" placeholder="Votre nom" class="input">
+                            <input type="text" name="nom" placeholder="Votre nom" class="input element-form" id="nom">
+                            <p id="nom-errors" class="errors"></p>
                         </div>
                         <div class="label">
                             <label for="mail">E-mail</label>
                         </div>
                         <div class="champs-contact">
-                            <input type="text" name="mail" placeholder="Votre e-mail" class="input">
+                            <input type="text" name="mail" placeholder="Votre e-mail" class="input element-form" id="mail">
+                            <p class="errors"></p>
                         </div>
                         <div class="label">
-                            <label for="object">Object</label>
+                            <label for="object">Objet</label>
                         </div>
                         <div class="champs-contact">
-                            <input type="text" name="object" placeholder="Object de votre demande" class="input">
+                            <input type="text" name="object" placeholder="Objet de votre demande" class="input element-form" id="object">
+                            <p class="errors"></p>
                         </div>
                         <div class="label">
                             <label for="message">Message</label>
                         </div>
                         <div class="champs-contact">
-                            <textarea name="message" rows="5" cols="33" class="txt-message"></textarea>
+                            <textarea name="message" rows="5" cols="33" class="txt-message element-form" id="message"></textarea>
+                            <p class="errors"></p>
                         </div>
                         <div class="contenu-btn-form">
-                            <button type="submit" class="btn-envoyer"><i class="fa-solid fa-paper-plane"></i> Envoyer</button>
+                            <button type="submit" class="btn-envoyer" id="submit"><i class="fa-solid fa-paper-plane"></i> Envoyer</button>
                         </div>
                     </div>
                 </form>

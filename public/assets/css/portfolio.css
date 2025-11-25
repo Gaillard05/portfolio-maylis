@@ -458,6 +458,13 @@ line, polyline {
     padding: 5rem 0 0;
 }
 
+.errors {
+    color: #29bfe9;
+    text-align: left;
+    margin: 4%;
+    font-size: 0.9rem;
+}
+
 .message_error, .message_sucess {
     display: flex;
     justify-content: center;
