@@ -113,7 +113,7 @@ include_once "../app/views/header/header.phtml";
         <div class="contenus-contact">
             <div class="contenu-contact-form">
                 <p class="info">Remplissez le formulaire pour me contacter</p>
-                <form action="/contact/send" method="post" class="form" id="form-contact">
+                <form action="/contact/send" method="post" name="contact-form" class="form" id="form-contact">
                     <div class="contenu-form">
                         <div class="label">
                             <label for="nom">Nom</label>
@@ -144,7 +144,7 @@ include_once "../app/views/header/header.phtml";
                             <p class="errors"></p>
                         </div>
                         <div class="contenu-btn-form">
-                            <button type="submit" class="btn-envoyer" id="submit"><i class="fa-solid fa-paper-plane"></i> Envoyer</button>
+                            <button type="submit" class="btn-envoyer" id="btn-submit"><i class="fa-solid fa-paper-plane"></i> Envoyer</button>
                         </div>
                     </div>
                 </form>
