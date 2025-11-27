@@ -3,6 +3,8 @@
 require "../app/models/ProjetModel.php";
 
 class HomeController {
+
+
     public function index() {
 
         #section projet de la page d'accueil
@@ -29,6 +31,12 @@ class HomeController {
 
     public function handleContact() {
         header('location: /#contact');
+        exit;
+    }
+
+    public function downloadCv() {
+        $downloadCv = new DownloadCv();
+        $telechargement = $downloadCv->download();
         exit;
     }
 }

@@ -5,6 +5,7 @@
     $dotenv->load();
     require '../app/services/router.php';
     require '../app/services/mailer.php';
+    require '../app/services/download_cv.php';
     require '../app/controllers/home/HomeController.php';
     require '../app/controllers/contact/ContactController.php';
     require '../app/controllers/projet/ProjetController.php';
