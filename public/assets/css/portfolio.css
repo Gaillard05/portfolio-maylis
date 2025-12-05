@@ -410,6 +410,7 @@ line, polyline {
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    margin: 2%;
 }
 
 /* contenu projets - version mobile */
@@ -851,6 +852,7 @@ label, input, .txt-message, .btn-envoyer {
     .fa-symfony,
     .fa-react,
     .icones,
+    .ico_mysql,
     .fa-bootstrap,
     .fa-wordpress
     {
@@ -858,9 +860,9 @@ label, input, .txt-message, .btn-envoyer {
         margin-bottom: 10%;
     }
 
-    .icones
-    {
-        width: 60px;
+    img.ico_mysql {
+        width: 60%;
+        margin-bottom: 10%;
     }
 
     /* Projets */
@@ -970,6 +972,10 @@ label, input, .txt-message, .btn-envoyer {
 
     .fa-symfony.ico-symfony, .fa-css3-alt.icon-css, .fa-js.ico-js {
         width: 80px;
+    }
+
+    .icones {
+        width: 54px;
     }
 
 }
@@ -1114,18 +1120,25 @@ label, input, .txt-message, .btn-envoyer {
 
 /* section technologies */
 
-    .contenus {
+    .contenu-technologies {
         display: flex;
-        flex-direction: row;
-        justify-content: center;
         flex-wrap: wrap;
+        flex-direction: column;
         width: 100%;
     }
 
+    .contenus {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
     .contenu-tech {
-        width: 30%;
+        width: 25%;
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        margin: 2%;
     }
 
 /* section projets */
@@ -1133,6 +1146,7 @@ label, input, .txt-message, .btn-envoyer {
     .contenu-projets {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
     }
 
 /* section contact */
@@ -1185,7 +1199,7 @@ label, input, .txt-message, .btn-envoyer {
 
     .conteneur-scroll-haut {
         bottom: 25%;
-        margin-right: 5%;
+        margin-right: 1.5%;
     }
 
 /* footer */
@@ -1231,6 +1245,12 @@ footer {
         flex-direction: column;
         width: 60%;
         margin-right: 4%;
+    }
+
+    
+    img.ico_mysql {
+        width: 30%;
+        margin-bottom: 6%;
     }
 
     .btn-scroll-projet {
