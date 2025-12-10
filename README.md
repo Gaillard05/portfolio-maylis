@@ -4,7 +4,7 @@ Projet portfolio qui présente les travaux réalisés au cours de mes différent
 
 ## Installation
 1. Clonez le dépôt 
-git clone https://github.com/Gaillard05/portfolio-maylis.git 
+git clone https://github.com/Gaillard05/portfolio-maylis.git  
 cd portfolio-maylis
 2. Installez les dépendances 
 composer install
