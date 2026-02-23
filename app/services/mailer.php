@@ -22,7 +22,7 @@ class Mailer {
         try {
             
             $this->mailer->isHTML(true);
-            $this->mailer->setFrom('maylisgaillard@hotmail.fr', 'maylis gaillard');
+            $this->mailer->setFrom('mg.contact.digital@gmail.com', 'maylis gaillard');
             $this->mailer->addAddress($mail);
             $this->mailer->Subject = $object;
             $this->mailer->Body =

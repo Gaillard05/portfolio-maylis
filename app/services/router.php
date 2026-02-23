@@ -25,6 +25,7 @@ class Router {
         $r->addRoute('GET', '/telechargement-cv', ['HomeController', 'downloadCv']);
         $r->addRoute('POST', '/contact/send', ['ContactController', 'send']);
         $r->addRoute('GET', '/projet/{slug:[a-zA-Z0-9\-]+}', ['ProjetController', 'show']);
+         $r->addRoute('GET', '/mentions-legales', ['MentionsLegalesController', 'mentions']);
     }
 
     public function dispatch(string $httpMethod, string $uri)

@@ -9,6 +9,7 @@
     require '../app/controllers/home/HomeController.php';
     require '../app/controllers/contact/ContactController.php';
     require '../app/controllers/projet/ProjetController.php';
+    require '../app/controllers/mentions/MentionsLegalesController.php';
 
     session_start();
     
