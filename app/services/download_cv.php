@@ -4,6 +4,7 @@ class DownloadCv {
 
     public function download()  {
         $file = __DIR__ . '\..\..\public\assets\cv\cv_maylis_gaillard.pdf';
+        // $file = __DIR__ . '/../../public/assets/cv/cv_maylis_gaillard.pdf';
 
         if(file_exists($file)) {
             header("Content-Description: File Transfer");
