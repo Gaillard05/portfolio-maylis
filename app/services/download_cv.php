@@ -19,7 +19,7 @@ class DownloadCv {
             $handle = fopen($file, "rb");
 
             if($handle === false) {
-                die("Imposssible d'ouvrir le fichier.");
+                die("Impossible d'ouvrir le fichier.");
             }
 
             while(!feof($handle)) {
