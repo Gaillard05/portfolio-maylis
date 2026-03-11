@@ -33,7 +33,8 @@ class DownloadCv {
             exit;
         } else {
             http_response_code(404);
-            echo "fichier non trouvé";
+            require '../app/views/erreurs/404.phtml';
+            // echo "fichier non trouvé";
         }
 
         
