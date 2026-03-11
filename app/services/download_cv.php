@@ -20,7 +20,8 @@ class DownloadCv {
             $handle = fopen($file, "rb");
 
             if($handle === false) {
-                die("Impossible d'ouvrir le fichier.");
+                http_response_code(403);
+                require '../app/views/erreurs/403.phtml';
             }
 
             while(!feof($handle)) {
