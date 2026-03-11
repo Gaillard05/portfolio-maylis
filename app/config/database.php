@@ -13,7 +13,10 @@ class Database
         $pass = $_ENV['DB_PASS'] ?? null;
 
         if(!$host || !$dbname || !$user) {
-            die("Erreur : Variables d'environnement manquantes !");
+            http_response_code(500);
+            require '../app/views/erreurs/500.phtml';
+            return;
+            //die("Erreur : Variables d'environnement manquantes !");
         }
 
         try {
@@ -24,7 +27,10 @@ class Database
             );
             $this->connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         } catch(PDOException $e) {
-            die('Erreur de connexion PDO : '.$e->getMessage());
+            http_response_code(500);
+            require '../app/views/erreurs/500.phtml';
+            return;
+           // die('Erreur de connexion PDO : '.$e->getMessage());
         }
 
    }
@@ -40,7 +46,10 @@ class Database
    public function getConnection(): PDO
    {
     if($this->connection === null){
-        die("Connexion PDO non initialisée !");
+        http_response_code(500);
+        require '../app/views/erreurs/500.phtml';
+        die;
+        //die("Connexion PDO non initialisée !");
     }
     return $this->connection;
    }

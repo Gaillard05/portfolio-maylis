@@ -25,11 +25,12 @@
     switch($routerInfo[0]) {
         case FastRoute\Dispatcher::NOT_FOUND:
             http_response_code(404);
-            echo "Page non trouvée";
+            // echo "Page non trouvée";
+            require '../app/views/erreurs/404.phtml';
             break;
         case FastRoute\Dispatcher::METHOD_NOT_ALLOWED:
             http_response_code(405);
-            echo "Méthode non autorisée";
+            require '../app/views/erreurs/405.phtml';
             break;
         case FastRoute\Dispatcher::FOUND:
             [$class, $method] = $routerInfo[1];

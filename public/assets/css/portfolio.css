@@ -5,9 +5,24 @@
 }
 
 body {
+    animation:  fadeIn 2s ease-in-out;
+}
+
+body, .erreurs {
     color: #ecf3f5;
     background-color:#14191e;
-    animation:  fadeIn 2s ease-in-out;
+}
+
+.erreurs {
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.erreurs, .contenu-btn-retour {
+    margin-top: 5%;
 }
 
 @font-face {
@@ -181,7 +196,7 @@ header, .menu, footer {
     margin-bottom: 5%;
 }
 
-.btn-savoir-plus, .btn-contact, .btn-cv,  .btn-github, .btn-envoyer  {
+.btn-savoir-plus, .btn-contact, .btn-cv,  .btn-github, .btn-envoyer, .btn-retour  {
     border-radius: 4px;
     background-color: #a3cbd7;
     text-decoration: none;
@@ -191,7 +206,7 @@ header, .menu, footer {
     font-family: "Inter";
 } 
 
-.btn-savoir-plus, .btn-contact, .btn-cv, .btn-github, .btn-envoyer {
+.btn-savoir-plus, .btn-contact, .btn-cv, .btn-github, .btn-envoyer, .btn-retour {
     padding: 15px;
 }
 
@@ -474,7 +489,7 @@ line, polyline {
     margin: 5%;
 }
 
-.fa-circle-plus {
+.fa-circle-plus, .fa-circle-arrow-right {
     font-size: 14px;
 }
 
@@ -791,6 +806,7 @@ label, input, .txt-message, .btn-envoyer {
 {
     margin: 2%;
 }
+
 
 /* portfolio - version mobile large */
 @media (max-width: 425px) {

@@ -2,16 +2,25 @@
 
 class ProjetController {
     public function show($slug) {
+    
+        if(!$slug) {
+            http_response_code(404);
+            require '../app/views/erreurs/404.phtml';
+            return;
+        }
 
         $projetModel = new ProjetModel();
         $projet = $projetModel->getProjetBySlug($slug);
-        $technologies = $projetModel->getTechnologies($projet['id']);
 
         if(!$projet) {
-            die("Projet introuvable");
+            http_response_code(404);
+            require '../app/views/erreurs/404.phtml';
+            return;
         }
 
+        $technologies = $projetModel->getTechnologies($projet['id']); 
         require '../app/views/projet/projet.phtml';
+      
     }
 }
 
