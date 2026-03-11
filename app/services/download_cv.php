@@ -3,7 +3,9 @@
 class DownloadCv {
 
     public function download()  {
+        // environnement de dev
         $file = __DIR__ . '\..\..\public\assets\cv\cv_maylis_gaillard.pdf';
+        // environnement de prod
         // $file = __DIR__ . '/../../public/assets/cv/cv_maylis_gaillard.pdf';
 
         if(file_exists($file)) {
