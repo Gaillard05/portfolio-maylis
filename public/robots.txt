@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /
+
+# Bloquer dossiers techniques MVC
+Disallow: /app/
+Disallow :  /config/
+Disallow: /vendor/
+
+# Bloquer les fichier sensibles
+Disallow: /.env
+Disallow: /.git/
+Disallow: /.gitignore
+Disallow: /composer.json
+Disallow: /composer.lock
+Disallow: /README.md
+
+
+
+Sitemap: https//maylis-gaillard.fr/sitemap.xml

@@ -66,6 +66,8 @@ p, strong {
 
 .fa-linkedin,
 .fa-github, 
+.fa-facebook,
+.fa-instagram,
 .fa-php, 
 .fa-js, 
 .fa-python, 
@@ -82,7 +84,9 @@ p, strong {
 }
 
 .fa-linkedin,
-.fa-github, 
+.fa-github,
+.fa-facebook,
+.fa-instagram, 
 .fa-php, 
 .fa-js, 
 .fa-python, 
@@ -100,6 +104,8 @@ p, strong {
 
 .fa-linkedin,
 .fa-github, 
+.fa-facebook,
+.fa-instagram,
 .fa-php, 
 .fa-js, 
 .fa-python, 
@@ -325,7 +331,7 @@ a {
     margin-top: 2%;
 }
 
-.fa-linkedin, .fa-github {
+.fa-linkedin, .fa-github, .fa-facebook, .fa-instagram {
     margin: 2%;
 }
 
@@ -675,15 +681,10 @@ label, input, .txt-message, .btn-envoyer {
     margin-bottom: 5px;
 }
 
-.contenu-ico-footer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
 
-.icone-linkedin, .icone-github, .fa-file-lines {
+.icone-linkedin, .icone-github, .icone-insta, .icone-facebook, .fa-file-lines {
     font-size: 22px;
-    margin-top: 2%;
+    margin-top: 4%;
 }
 
 .footer-mentions-legales {
@@ -811,7 +812,7 @@ label, input, .txt-message, .btn-envoyer {
 /* portfolio - version mobile large */
 @media (max-width: 425px) {
 
-    .fa-linkedin, .fa-github, .fa-file-lines {
+    .fa-linkedin, .fa-github, .fa-facebook, .fa-instagram, .fa-file-lines {
         margin-top: 10%;
     }
 
@@ -913,7 +914,7 @@ label, input, .txt-message, .btn-envoyer {
         margin-top: 2%;
     }
 
-   .fa-linkedin, .fa-github {
+   .fa-linkedin, .fa-github, .fa-facebook, .fa-instagram {
         font-size: 50px;
         margin-top: 5%;
     }
@@ -1044,7 +1045,7 @@ label, input, .txt-message, .btn-envoyer {
         text-align: center;
     }
 
-    .icone-linkedin, .icone-github, .fa-file-lines {
+    .icone-linkedin, .icone-github, .icone-insta, .icone-facebook, .fa-file-lines {
         font-size: 2rem;
     }
 
@@ -1175,9 +1176,9 @@ label, input, .txt-message, .btn-envoyer {
     }
     
 
-    .icone-accueil-linkedin, .icone-accueil-github {
+    .icone-linkedin-accueil, .icone-github-accueil, .icone-insta-accueil, .icone-facebook-accueil {
         font-size: 50px;
-        margin-top: 1%;
+        margin-top: 2%;
     }
 
 
@@ -1321,7 +1322,7 @@ footer {
 
 /* icones footer */
 
-    .icone-linkedin, .icone-github, .fa-file-lines {
+    .icone-linkedin, .icone-github, .icone-facebook, .icone-insta, .fa-file-lines {
         width: 30px;
     }
 
