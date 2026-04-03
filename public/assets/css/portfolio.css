@@ -28,21 +28,25 @@ body, .erreurs {
 @font-face {
     font-family: "Nunito";
     src: url("../fonts/Nunito/Nunito-Regular.ttf");
+    font-display: swap;
 }
 
 @font-face {
     font-family: "Inter";
     src: url("../fonts/Inter/Inter_18pt-Regular.ttf");
+    font-display: swap;
 }
 
 @font-face {
     font-family: "Inter-Italic";
     src: url("../fonts/Inter/Inter_18pt-Italic.ttf");
+    font-display: swap;
 }
 
 @font-face {
     font-family: "Inter-Bold";
     src: url("../fonts/Inter/Inter_18pt-Bold.ttf");
+    font-display: swap;
 }
 
 /* style général du portfolio */
