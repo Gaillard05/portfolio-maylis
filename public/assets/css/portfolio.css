@@ -229,6 +229,10 @@ header, .menu, footer {
     color:#0a1113;
 }
 
+.title-reseaux, .legend-reseaux, .legend-mentions {
+    margin-top: 10px;
+}
+
 
 /* header - version mobile */
 
@@ -328,11 +332,20 @@ a {
 }
 
 .reseaux-sociaux {
-    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    margin: 2%;
 }
 
 .fa-linkedin, .fa-github, .fa-facebook, .fa-instagram {
     margin: 2%;
+}
+
+.linkedin, .github, .instagram, .facebook {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
 }
 
 .contenu-btn-contact {
@@ -677,19 +690,31 @@ label, input, .txt-message, .btn-envoyer {
    margin: 5px;
 }
 
+.titre-reseaux, .legend-mentions {
+    text-align: center;
+}
+
 .titre-reseaux, .titre-pol-conf {
     margin-bottom: 5px;
 }
-
 
 .icone-linkedin, .icone-github, .icone-insta, .icone-facebook, .fa-file-lines {
     font-size: 22px;
     margin-top: 4%;
 }
 
+.legend-reseaux, .legend-mentions {
+    font-size: 12px;
+}
+
 .footer-mentions-legales {
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+.mentions {
+    margin: 10px;
 }
 
 /* projet - version mobile */
@@ -1042,7 +1067,6 @@ label, input, .txt-message, .btn-envoyer {
     .titre-reseaux, .titre-pol-conf
     {
         font-size: 1.2rem;
-        text-align: center;
     }
 
     .icone-linkedin, .icone-github, .icone-insta, .icone-facebook, .fa-file-lines {
@@ -1318,6 +1342,15 @@ label, input, .txt-message, .btn-envoyer {
 
 footer {
     margin-top: 5%;
+}
+
+.conteneur-rs-ml {
+    flex-direction: row;
+    margin: 2%;
+}
+
+.footer-reseaux-sociaux {
+    margin-right: 20px;
 }
 
 /* icones footer */
